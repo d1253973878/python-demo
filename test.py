@@ -2,5 +2,5 @@
 # -*- coding:utf-8 -*-
 __author__ = 'douzy'
 
-for i in xrange(10):
+for i in range(10):
     print(i)
