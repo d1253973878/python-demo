@@ -24,7 +24,6 @@ def post_info():
     # 获取post请求参数
     params = request.form.to_dict()
     print(params)
-    print(request)
 
     return "success"
 
