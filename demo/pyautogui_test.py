@@ -12,7 +12,7 @@ import pyautogui as pag
 # 执行测试任务
 def getJob():
     try:
-        # 在当前屏幕中找到图片 1.png，并返回该图片在当前屏幕的位置，返回的是 左-上-右-下
+        # 在当前屏幕中找到图片 1.png，并返回该图片在当前屏幕的位置，返回的是 左-上-宽-高
         pos = pag.locateOnScreen('img/1.png')
         print(pos)
 
