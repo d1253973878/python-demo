@@ -3,6 +3,7 @@
 __author__ = 'douzy'
 
 """ 使用模块pyautogui实现鼠标和键盘操作，找图找色
+    图片img/screen.png是我当时的桌面。大家可以根据自己的桌面来更换img目录下的1.png、2.png、3.png之后再测试
 """
 
 import time
