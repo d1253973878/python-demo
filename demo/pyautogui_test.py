@@ -55,4 +55,5 @@ def getJob():
         print(e)
 
 
-getJob()
+if __name__ == "__main__":
+    getJob()
