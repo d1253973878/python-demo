@@ -4,6 +4,7 @@ __author__ = 'douzy'
 
 import re
 import time
+import json
 import requests
 from lxml import etree
 
@@ -118,5 +119,69 @@ def start():
             f.write('\n')
 
 
+def download_url():
+    base_url = "http://api.warchess.club/map/list.latest?page=%d&token=77t1SwIMRm4ukIIRGX0I8lZ2G6Ny0jL2"
+
+    for i in range(8):
+        url = base_url % (i + 1)
+        r = requests.get(url)
+
+        text = json.loads(r.text)
+        if text["resultCode"] == 100:
+            p_list = text["list"]
+            for item in p_list:
+                mapName = item["mapName"]
+                imageUrl = item["imageUrl"]
+
+                with open('./urls/url4.txt', 'a') as f:
+                    try:
+                        line = mapName + "@@@@@@@@@" + imageUrl
+                        f.write(line)
+                        f.write("\n")
+                    except Exception as e:
+                        print(e)
+                        print(imageUrl)
+        else:
+            print(url)
+
+
+def download_img():
+    p_list = list()
+    with open('./urls/url4.txt', 'r') as f:
+        for line in f.readlines():
+            lineArr = line.split("@@@@@@@@@")
+            name = lineArr[0]
+            url = lineArr[1]
+
+            hero = dict()
+            hero["name"] = name
+            hero["url"] = url
+            p_list.append(hero)
+
+    print(len(p_list))
+
+    index = 62
+    for item in p_list:
+        name = item["name"]
+        url = item["url"].strip()
+
+        r = requests.get(url)
+        with open('./image/map/%s%d.jpg' % (name, index), 'wb') as f:
+            f.write(r.content)
+
+        index += 1
+
+
+def test():
+    url = "http://file.warchess.club/game/map/image/208.jpg"
+    r = requests.get(url)
+    with open('a.jpg', 'wb') as f:
+        f.write(r.content)
+
+
 if __name__ == "__main__":
-    start()
+    # start()
+    # download_url()
+    download_img()
+
+    # test()

@@ -1,0 +1,940 @@
+[
+    {
+        "skillId": 101,
+        "skillPattern": 101,
+        "name": "盾防",
+        "description": "受到近战8格范围内的攻击时，减免50%物理伤害。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 0.5,
+            "b": 1
+        }
+    },
+    {
+        "skillId": 102,
+        "skillPattern": 102,
+        "name": "乘胜",
+        "description": "对虚弱目标伤害增加50%。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 0.5
+        }
+    },
+    {
+        "skillId": 103,
+        "skillPattern": 106,
+        "name": "重击",
+        "description": "击退目标一格，如果目标身后有障碍物或者部队导致目标无法被击退时，则眩晕目标1回合。（此技能斜方向也可以触发）",
+        "skillType": 1,
+        "cd": 1,
+        "guideStage": 12494,
+        "paras": {}
+    },
+    {
+        "skillId": 104,
+        "skillPattern": 103,
+        "name": "不屈",
+        "description": "虚弱时，物理防御和法术抗性提高100%",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "b": 1,
+            "d": 1
+        }
+    },
+    {
+        "skillId": 105,
+        "skillPattern": 104,
+        "name": "独行",
+        "description": "周围没有友军时，物理攻击和法术强度提高100%",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 1,
+            "c": 1
+        }
+    },
+    {
+        "skillId": 106,
+        "skillPattern": 108,
+        "name": "智慧",
+        "description": "周围友军法术强度和法术抗性提高100%",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "c": 1,
+            "d": 1
+        }
+    },
+    {
+        "skillId": 118,
+        "skillPattern": 110,
+        "name": "破甲",
+        "description": "攻击无视目标20%物理防御。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 0.2,
+            "b": 1
+        }
+    },
+    {
+        "skillId": 122,
+        "skillPattern": 114,
+        "name": "速击",
+        "description": "对行动顺序在自己之后的目标造成的伤害提高50%。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 0.5
+        }
+    },
+    {
+        "skillId": 134,
+        "skillPattern": 116,
+        "name": "体魄",
+        "description": "反弹受到伤害的30%。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 0.3,
+            "b": 3
+        }
+    },
+    {
+        "skillId": 139,
+        "skillPattern": 107,
+        "name": "克敌",
+        "description": "对英雄目标造成的伤害提高20%。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 0.2
+        }
+    },
+    {
+        "skillId": 145,
+        "skillPattern": 146,
+        "name": "定军",
+        "description": "近身攻击可以嘲讽目标。",
+        "skillType": 1,
+        "cd": 1,
+        "guideStage": 12492,
+        "paras": {}
+    },
+    {
+        "skillId": 148,
+        "skillPattern": 122,
+        "name": "奇袭",
+        "description": "背后攻击必定暴击，其他方向攻击则不会暴击。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {}
+    },
+    {
+        "skillId": 149,
+        "skillPattern": 123,
+        "name": "追击",
+        "description": "自身攻击范围内的敌对目标受到攻击时，自己追加一次攻击。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 150,
+        "skillPattern": 124,
+        "name": "惩戒",
+        "description": "根据目标已损失的血量百分比，提高伤害，最高提高100%。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {}
+    },
+    {
+        "skillId": 151,
+        "skillPattern": 125,
+        "name": "冲锋",
+        "description": "每移动一格增加20%的物理伤害。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 0.2
+        }
+    },
+    {
+        "skillId": 152,
+        "skillPattern": 126,
+        "name": "自愈",
+        "description": "如果本回合没有受到伤害，则下回合回复最大生命的50%。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 0.5
+        }
+    },
+    {
+        "skillId": 153,
+        "skillPattern": 127,
+        "name": "龙胆",
+        "description": "血量越低，物理攻击和物理防御越高。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 1,
+            "b": 1,
+            "c": 0,
+            "d": 0
+        }
+    },
+    {
+        "skillId": 154,
+        "skillPattern": 128,
+        "name": "鹰眼",
+        "description": "攻击会标记目标，减少目标20%物理防御。攻击有标记的目标伤害提高50%。同时只能标记一个目标。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 0.5
+        }
+    },
+    {
+        "skillId": 155,
+        "skillPattern": 129,
+        "name": "致残",
+        "description": "攻击可使目标致残，移动力降为1。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 100,
+        "paras": {
+            "b": 7,
+            "c": 1
+        }
+    },
+    {
+        "skillId": 156,
+        "skillPattern": 130,
+        "name": "潜伏",
+        "description": "当前回合不攻击，则进入潜伏状态。潜伏状态下，不能成为攻击目标。潜伏状态下的攻击必暴击，如果是背后攻击，还附带眩晕一回合。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {}
+    },
+    {
+        "skillId": 157,
+        "skillPattern": 131,
+        "name": "践踏",
+        "description": "不移动，不攻击时释放。50%概率造成周围8格范围内的敌对目标眩晕。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 50,
+        "paras": {
+            "b": 4
+        }
+    },
+    {
+        "skillId": 158,
+        "skillPattern": 129,
+        "name": "施毒",
+        "description": "攻击可以使目标中毒，中毒效果可以叠加，最高叠加3层。每层每回合造成（50+施法者法术强度10%）点伤害，持续3回合。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 100,
+        "paras": {
+            "b": 10,
+            "c": 3,
+            "d": 50,
+            "e": 0.1,
+            "f": 3
+        }
+    },
+    {
+        "skillId": 159,
+        "skillPattern": 131,
+        "name": "战吼",
+        "description": "不移动，不攻击时释放。50%概率造成周围8格范围内的敌对目标恐惧。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 50,
+        "paras": {
+            "b": 11
+        }
+    },
+    {
+        "skillId": 160,
+        "skillPattern": 129,
+        "name": "混乱之刃",
+        "description": "攻击有80%概率使目标混乱。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 80,
+        "paras": {
+            "b": 12,
+            "c": 1
+        }
+    },
+    {
+        "skillId": 161,
+        "skillPattern": 129,
+        "name": "火攻",
+        "description": "攻击可以点燃目标。每回合造成自身法术强度10%点伤害，持续2回合。\n状态结束后，如果周围8格内存在同阵营单位，则点燃状态会随机传递给其中一个单位。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 100,
+        "paras": {
+            "c": 2,
+            "b": 13,
+            "e": 0.1
+        }
+    },
+    {
+        "skillId": 162,
+        "skillPattern": 132,
+        "name": "仁德",
+        "description": "每次攻击，为周围8格内血量最低的同阵营单位（不包括自己）回复攻击造成伤害50%的血量。",
+        "skillType": 1,
+        "cd": 1,
+        "guideStage": 12543,
+        "paras": {
+            "a": 0.5
+        }
+    },
+    {
+        "skillId": 163,
+        "skillPattern": 133,
+        "name": "杀戮",
+        "description": "击杀目标后，自动原地再进行一次攻击。",
+        "skillType": 1,
+        "cd": 0,
+        "guideStage": 12572,
+        "paras": {}
+    },
+    {
+        "skillId": 164,
+        "skillPattern": 134,
+        "name": "镜像",
+        "description": "受到法术攻击时，有50%概率将本次攻击的伤害反射给攻击者。（自身不会受伤）",
+        "skillType": 1,
+        "cd": 0,
+        "random": 50,
+        "paras": {
+            "b": 2
+        }
+    },
+    {
+        "skillId": 165,
+        "skillPattern": 135,
+        "name": "贯穿",
+        "description": "攻击可以穿透当前目标身后的1个目标。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 1,
+            "b": 1
+        }
+    },
+    {
+        "skillId": 166,
+        "skillPattern": 129,
+        "name": "沉默",
+        "description": "攻击有60%概率使目标沉默。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 60,
+        "paras": {
+            "b": 14,
+            "c": 1
+        }
+    },
+    {
+        "skillId": 167,
+        "skillPattern": 129,
+        "name": "定身",
+        "description": "攻击有80%概率使目标定身。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 80,
+        "paras": {
+            "b": 15,
+            "c": 1
+        }
+    },
+    {
+        "skillId": 169,
+        "skillPattern": 137,
+        "name": "戒心",
+        "description": "受到周围8格范围内的攻击必定反击。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 170,
+        "skillPattern": 131,
+        "name": "群嘲",
+        "description": "不移动，不攻击时发动。嘲讽周围8格范围内的敌军。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 100,
+        "paras": {
+            "b": 5
+        }
+    },
+    {
+        "skillId": 171,
+        "skillPattern": 138,
+        "name": "羽化",
+        "description": "如果本回合不移动，则免疫物理伤害。",
+        "skillType": 1,
+        "cd": 0,
+        "random": 100,
+        "paras": {
+            "b": 1
+        }
+    },
+    {
+        "skillId": 172,
+        "skillPattern": 139,
+        "name": "金身",
+        "description": "暴击时，会产生一个100+物理攻击力*10%的护盾，持续2回合。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 100,
+            "b": 0.1,
+            "c": 2
+        }
+    },
+    {
+        "skillId": 173,
+        "skillPattern": 140,
+        "name": "防御护盾",
+        "description": "受到攻击时，60%概率会产生一个100+物理防御力*10%的护盾，持续1回合。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 60,
+        "paras": {
+            "b": 100,
+            "c": 1,
+            "d": 0.1
+        }
+    },
+    {
+        "skillId": 174,
+        "skillPattern": 141,
+        "name": "横扫",
+        "description": "攻击可以横扫与当前目标并排的两侧各1个目标，只有四方向攻击时有效。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 1,
+            "b": 1
+        }
+    },
+    {
+        "skillId": 176,
+        "skillPattern": 143,
+        "name": "火盾",
+        "description": "受到物理攻击时会点燃攻击者，每回合造成50+自身法术强度5%的伤害，持续2回合。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "c": 2,
+            "d": 50,
+            "e": 0.05
+        }
+    },
+    {
+        "skillId": 177,
+        "skillPattern": 145,
+        "name": "流火",
+        "description": "眩晕当前目标2回合，并点燃其周围的所有敌军，每回合造成100+自身法术强度5%的伤害，持续2回合。并对目标周围的敌军造成本次伤害30%的伤害。",
+        "skillType": 2,
+        "cd": 3,
+        "paras": {
+            "a": 0.3,
+            "c": 2,
+            "d": 100,
+            "e": 0.05
+        }
+    },
+    {
+        "skillId": 179,
+        "skillPattern": 136,
+        "name": "鼓舞",
+        "description": "行动结束时随机为周围8格内的一名友军驱散全部异常状态。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 100,
+        "paras": {}
+    },
+    {
+        "skillId": 180,
+        "skillPattern": 147,
+        "name": "锋芒",
+        "description": "近身攻击提高50%吸血效果",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 0.5
+        }
+    },
+    {
+        "skillId": 181,
+        "skillPattern": 142,
+        "name": "法阵",
+        "description": "攻击可以对当前目标周围8格范围内的敌军目标造成本次伤害30%的伤害。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 0.3
+        }
+    },
+    {
+        "skillId": 182,
+        "skillPattern": 129,
+        "name": "蛮力",
+        "description": "攻击有50%概率击倒目标1回合。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 50,
+        "paras": {
+            "b": 9,
+            "c": 1
+        }
+    },
+    {
+        "skillId": 183,
+        "skillPattern": 138,
+        "name": "吸收",
+        "description": "如果本回合不移动，则免疫法术伤害。",
+        "skillType": 1,
+        "cd": 0,
+        "random": 100,
+        "paras": {
+            "b": 2
+        }
+    },
+    {
+        "skillId": 184,
+        "skillPattern": 148,
+        "name": "斗篷",
+        "description": "攻击时60%概率会产生一个100+法术攻击力*10%的护盾，持续2回合。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 60,
+        "paras": {
+            "b": 100,
+            "c": 2,
+            "d": 0.1,
+            "e": 2
+        }
+    },
+    {
+        "skillId": 185,
+        "skillPattern": 149,
+        "name": "星陨",
+        "description": "护盾破碎时眩晕周围敌军1回合。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 100,
+        "paras": {
+            "b": 4
+        }
+    },
+    {
+        "skillId": 186,
+        "skillPattern": 150,
+        "name": "连击",
+        "description": "二次攻击。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 100,
+        "paras": {
+            "b": 2
+        }
+    },
+    {
+        "skillId": 187,
+        "skillPattern": 129,
+        "name": "霍乱",
+        "description": "攻击有50%概率给目标添加以下状态中的一种（恐惧，混乱，眩晕）。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 50,
+        "paras": {
+            "b": 100,
+            "c": 1
+        }
+    },
+    {
+        "skillId": 188,
+        "skillPattern": 151,
+        "name": "吞噬",
+        "description": "攻击燃烧的目标时，增伤30%。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 100,
+        "paras": {
+            "b": 13,
+            "c": 0.3
+        }
+    },
+    {
+        "skillId": 189,
+        "skillPattern": 137,
+        "name": "反击",
+        "description": "受到周围8格范围内的攻击时有80%概率反击。",
+        "skillType": 1,
+        "cd": 0,
+        "random": 80,
+        "paras": {}
+    },
+    {
+        "skillId": 190,
+        "skillPattern": 105,
+        "name": "瞄准",
+        "description": "原地攻击伤害提高50%。",
+        "skillType": 1,
+        "cd": 0,
+        "random": 100,
+        "paras": {
+            "a": 0.5
+        }
+    },
+    {
+        "skillId": 191,
+        "skillPattern": 152,
+        "name": "破盾",
+        "description": "攻击有护盾的目标时，伤害提高50%。",
+        "skillType": 1,
+        "cd": 0,
+        "random": 100,
+        "paras": {
+            "a": 0.5
+        }
+    },
+    {
+        "skillId": 192,
+        "skillPattern": 129,
+        "name": "蛊毒",
+        "description": "攻击有50%概率使目标中毒，中毒效果可以叠加，最高叠加2层。每层每回合造成自身法术强度5%的伤害，持续2回合。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 50,
+        "paras": {
+            "b": 10,
+            "c": 2,
+            "e": 0.05,
+            "f": 2
+        }
+    },
+    {
+        "skillId": 193,
+        "skillPattern": 129,
+        "name": "火焰",
+        "description": "攻击有50%概率点燃目标。每回合造成自身法术强度5%点伤害，持续2回合。\n状态结束后，如果周围8格内存在同阵营单位，则点燃状态会随机传递给其中一个单位。",
+        "skillType": 1,
+        "cd": 1,
+        "random": 50,
+        "paras": {
+            "c": 2,
+            "b": 13,
+            "e": 0.05
+        }
+    },
+    {
+        "skillId": 194,
+        "skillPattern": 153,
+        "name": "暗幕",
+        "description": "免疫一次致命伤害，这个效果有5回合冷却。",
+        "skillType": 1,
+        "cd": 5,
+        "random": 100,
+        "paras": {}
+    },
+    {
+        "skillId": 195,
+        "skillPattern": 154,
+        "name": "真实伤害",
+        "description": "造成的伤害，无视目标防御，护盾等效果。",
+        "skillType": 1,
+        "cd": 0,
+        "random": 100,
+        "paras": {}
+    },
+    {
+        "skillId": 196,
+        "skillPattern": 155,
+        "name": "撞击",
+        "description": "移动距离大于等于3格时，近身攻击可以眩晕目标一回合（此技能只有物理英雄使用生效）。",
+        "skillType": 1,
+        "cd": 0,
+        "random": 100,
+        "paras": {
+            "a": 3
+        }
+    },
+    {
+        "skillId": 197,
+        "skillPattern": 117,
+        "name": "骑兵冲锋",
+        "description": "移动距离大于等于3格时，物理伤害提高50%。",
+        "skillType": 1,
+        "cd": 0,
+        "random": 100,
+        "paras": {
+            "a": 3,
+            "b": 0.5
+        }
+    },
+    {
+        "skillId": 198,
+        "skillPattern": 156,
+        "name": "十字溅射",
+        "description": "攻击可以对当前目标周围十字范围内的敌军目标造成本次伤害50%的伤害。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 0.5
+        }
+    },
+    {
+        "skillId": 199,
+        "skillPattern": 157,
+        "name": "扇形溅射",
+        "description": "攻击可以对当前目标身后5格扇形范围内的敌军目标造成本次伤害80%的伤害。",
+        "skillType": 1,
+        "cd": 1,
+        "paras": {
+            "a": 0.8,
+            "b": 5
+        }
+    },
+    {
+        "skillId": 200,
+        "skillPattern": 158,
+        "name": "瞬华",
+        "description": "击杀目标后可再次行动。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 300,
+        "skillPattern": 200,
+        "name": "猛毒",
+        "description": "攻击使目标中毒，中毒的目标每次行动前损失2格血。中毒效果不可驱散。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 2
+        }
+    },
+    {
+        "skillId": 301,
+        "skillPattern": 201,
+        "name": "远程2",
+        "description": "周围没有敌人时射程+1，周围有敌人时基础攻击变为1。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 2,
+            "s": "-1,-1|1,-1|2,0|-2,0|1,1|0,2|-1,1|0,-2|0,-3|0,3|-3,0|3,0|1,-2|-1,-2|1,2|-1,2|2,-1|2,1|-2,-1|-2,1"
+        }
+    },
+    {
+        "skillId": 302,
+        "skillPattern": 202,
+        "name": "游侠",
+        "description": "远程攻击时伤害所有目标周围的敌人，并使其速度-1，持续一回合",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 2
+        }
+    },
+    {
+        "skillId": 304,
+        "skillPattern": 201,
+        "name": "远程4",
+        "description": "周围没有敌人时射程+1，周围有敌人时基础攻击变为1。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 4,
+            "s": "-1,-1|1,-1|2,0|-2,0|1,1|0,2|-1,1|0,-2|0,-3|0,3|-3,0|3,0|1,-2|-1,-2|1,2|-1,2|2,-1|2,1|-2,-1|-2,1"
+        }
+    },
+    {
+        "skillId": 305,
+        "skillPattern": 203,
+        "name": "嘲讽",
+        "description": "一名角色攻击时，攻击范围内有任何对方角色拥有<嘲讽>的话，只能从拥有<嘲讽>的对象中选择攻击目标。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 306,
+        "skillPattern": 201,
+        "name": "远程5",
+        "description": "周围没有敌人时射程+1，周围有敌人时基础攻击变为1。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 5,
+            "s": "-1,-1|1,-1|2,0|-2,0|1,1|0,2|-1,1|0,-2|0,-3|0,3|-3,0|3,0|1,-2|-1,-2|1,2|-1,2|2,-1|2,1|-2,-1|-2,1"
+        }
+    },
+    {
+        "skillId": 307,
+        "skillPattern": 204,
+        "name": "万箭",
+        "description": "攻击时伤害周围所有的敌人。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 308,
+        "skillPattern": 205,
+        "name": "奸雄",
+        "description": "死亡时，对周围所有敌人造成13点伤害。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": -13
+        }
+    },
+    {
+        "skillId": 309,
+        "skillPattern": 206,
+        "name": "斩杀",
+        "description": "对虚弱的目标伤害翻倍。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 2
+        }
+    },
+    {
+        "skillId": 310,
+        "skillPattern": 207,
+        "name": "无双",
+        "description": "攻击周围没有队友的敌人时伤害翻倍。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 2
+        }
+    },
+    {
+        "skillId": 311,
+        "skillPattern": 201,
+        "name": "远程3",
+        "description": "周围没有敌人时射程+1，周围有敌人时基础攻击变为1。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 3,
+            "s": "-1,-1|1,-1|2,0|-2,0|1,1|0,2|-1,1|0,-2|0,-3|0,3|-3,0|3,0|1,-2|-1,-2|1,2|-1,2|2,-1|2,1|-2,-1|-2,1"
+        }
+    },
+    {
+        "skillId": 312,
+        "skillPattern": 208,
+        "name": "猎人",
+        "description": "攻击拥有嘲讽技能的敌人时伤害翻倍。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 2
+        }
+    },
+    {
+        "skillId": 313,
+        "skillPattern": 209,
+        "name": "穿云",
+        "description": "攻击穿透直线上所有目标。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 314,
+        "skillPattern": 210,
+        "name": "刺杀",
+        "description": "攻击场上血量最低目标时伤害翻倍。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 2
+        }
+    },
+    {
+        "skillId": 315,
+        "skillPattern": 211,
+        "name": "神力",
+        "description": "攻击击退目标一格，如果无法击退则造成双倍伤害。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {
+            "a": 2
+        }
+    },
+    {
+        "skillId": 316,
+        "skillPattern": 212,
+        "name": "仁德1",
+        "description": "攻击后，随机治疗周围队友中HP最低的角色之一。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 317,
+        "skillPattern": 213,
+        "name": "塔盾",
+        "description": "周围队友受到攻击时，如果伤害大于1点，则代替承受1点。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 318,
+        "skillPattern": 214,
+        "name": "诡计",
+        "description": "攻击时，如果目标HP大于自己，则治疗自己。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 319,
+        "skillPattern": 215,
+        "name": "重伤",
+        "description": "攻击使目标重伤，受到的伤害+1。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 320,
+        "skillPattern": 216,
+        "name": "铁锤",
+        "description": "攻击使目标获得冰冻，虚弱。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    },
+    {
+        "skillId": 321,
+        "skillPattern": 217,
+        "name": "寒铁",
+        "description": "攻击后，令自身周围的敌人获得冰冻。",
+        "skillType": 1,
+        "cd": 0,
+        "paras": {}
+    }
+]
