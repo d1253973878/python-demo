@@ -41,8 +41,18 @@ def deal_poll_event():
         print(pos)
 
 
+def deal_show_event():
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            print("pygame.QUIT")
+            sys.exit()
+        else:
+            print(event)
+
+
 # 为了让窗口一直存在下去，这里加个无限循环来保持程序一直运行
 while True:
     clock.tick(60)
     # deal_poll_event()
-    deal_get_event()
+    # pygame.event.set_allowed(None)
+    deal_show_event()
